@@ -10,15 +10,15 @@
 <body class="bg-dark text-white">
     <div class="container mt-4 col-4 col-offset-6">
         <h1 class="display-3">Post-Form</h1>
-        <form>
+        <form method="post" action="/mypost">
          <div class="mb-3">
            <label for="Fisrtname" class="form-label">Fisrtname</label>
-           <input type="text" class="form-control" id="Fisrtname" aria-describedby="emailHelp">
+           <input type="text" name="Fisrtname" class="form-control" id="Fisrtname" aria-describedby="emailHelp">
            
          </div>
          <div class="mb-3">
            <label for="LastName" class="form-label">LastName</label>
-           <input type="text" class="form-control" id="LastName">
+           <input type="text" name="LastName" class="form-control" id="LastName">
          </div>
          
          <button type="submit" class="btn btn-primary">Submit</button>
