@@ -10,15 +10,19 @@
 <body class="bg-dark text-white">
     <div class="container mt-4 col-4 col-offset-6">
         <h1 class="display-3">Post-Form</h1>
-        <form method="post" action="/mypost">
+        <form method="post" action="/mypost" enctype="multipart/form-data">
          <div class="mb-3">
-           <label for="Fisrtname" class="form-label">Fisrtname</label>
-           <input type="text" name="Fisrtname" class="form-control" id="Fisrtname" aria-describedby="emailHelp">
+           <label for="Firstname" class="form-label">Firstname</label>
+           <input type="text" name="Firstname" class="form-control" id="Firstname" aria-describedby="emailHelp">
            
          </div>
          <div class="mb-3">
            <label for="LastName" class="form-label">LastName</label>
            <input type="text" name="LastName" class="form-control" id="LastName">
+         </div>
+         <div class="mb-3">
+           <label for="savefile" class="form-label">savefile</label>
+           <input type="file" name="savefile" class="form-control" id="savefile">
          </div>
          
          <button type="submit" class="btn btn-primary">Submit</button>
